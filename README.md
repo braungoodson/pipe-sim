@@ -1,4 +1,4 @@
-MVP
-===
+edu.bu.met.cs472.pipeline
+=========================
 
-Micro Virtual Processor; A Pipeline Simulation
+edu.bu.met.cs472.pipeline

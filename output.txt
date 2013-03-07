@@ -1,0 +1,480 @@
+----------------------------------- CLOCK CYCLE : 1 -----------------------------------
+----------------------------------- CLOCK CYCLE : 1 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x10A;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0xA1020000, [sb  $2, 0($8)], IncrPC=1
+-> IF/ID Read
+Inst=0x00000000, [], IncrPC=1
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=0, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> EX/MEM Write
+Control: MemRead=0, MemWrite=0, MemToReg=0, RegWrite=0
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> EX/MEM Read
+Control: MemRead=0, MemWrite=0, MemToReg=0, RegWrite=0,
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+----------------------------------- CLOCK CYCLE : 2 -----------------------------------
+----------------------------------- CLOCK CYCLE : 2 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x10A;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x810AFFFC, [lb  $10, -4($8)], IncrPC=2
+-> IF/ID Read
+Inst=0xA1020000, [sb  $2, 0($8)], IncrPC=2
+
+-> ID/EX Write
+Control: RegDst=-1, ALUSrc=1, ALUOp=1, MemRead=0, MemWrite=1, MemToReg=-1, RegWrite=0
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,8
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> EX/MEM Read
+Control: MemRead=0, MemWrite=0, MemToReg=0, RegWrite=0,
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+----------------------------------- CLOCK CYCLE : 3 -----------------------------------
+----------------------------------- CLOCK CYCLE : 3 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x10A;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00831820, [add $3, $4, $3], IncrPC=3
+-> IF/ID Read
+Inst=0x810AFFFC, [lb  $10, -4($8)], IncrPC=3
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x10A, SEOffset = 0xFFFFFFFC, WriteRegNum = 10,8
+
+-> ID/EX Read
+Control: RegDst=-1, ALUSrc=1, ALUOp=1, MemRead=0, MemWrite=1, MemToReg=-1, RegWrite=0
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,8
+
+-> EX/MEM Write
+Control: MemRead=0, MemWrite=1, MemToReg=-1, RegWrite=0
+ALUResult = 0x108, SBValue= 0x102, WriteRegNum = 0
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0,
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+----------------------------------- CLOCK CYCLE : 4 -----------------------------------
+----------------------------------- CLOCK CYCLE : 4 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x10A;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x01263820, [add $7, $9, $6], IncrPC=4
+-> IF/ID Read
+Inst=0x00831820, [add $3, $4, $3], IncrPC=4
+
+-> ID/EX Write
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x104, ReadRegValue2 = 0x103, SEOffset = 0x00000000, WriteRegNum = 3,3
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x10A, SEOffset = 0xFFFFFFFC, WriteRegNum = 10,8
+
+-> EX/MEM Write
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ALUResult = 0x104, SBValue= 0x10A, WriteRegNum = 10
+
+-> EX/MEM Read
+Control: MemRead=0, MemWrite=1, MemToReg=-1, RegWrite=0,
+ALUResult = 0x108, SBValue= 0x102, WriteRegNum = 0
+
+-> MEM/WB Write
+Control: MemToReg=-1, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x108, WriteRegNum = 0
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x000, WriteRegNum = 0
+
+----------------------------------- CLOCK CYCLE : 5 -----------------------------------
+----------------------------------- CLOCK CYCLE : 5 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x10A;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x01224820, [add $9, $9, $2], IncrPC=5
+-> IF/ID Read
+Inst=0x01263820, [add $7, $9, $6], IncrPC=5
+
+-> ID/EX Write
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x109, ReadRegValue2 = 0x106, SEOffset = 0x00000000, WriteRegNum = 6,7
+
+-> ID/EX Read
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x104, ReadRegValue2 = 0x103, SEOffset = 0x00000000, WriteRegNum = 3,3
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ALUResult = 0x207, SBValue= 0x103, WriteRegNum = 3
+
+-> EX/MEM Read
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1,
+ALUResult = 0x104, SBValue= 0x10A, WriteRegNum = 10
+
+-> MEM/WB Write
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x104, WriteRegNum = 10
+
+-> MEM/WB Read
+Control: MemToReg=-1, RegWrite=0
+LWDataValue=0x000, ALUResult = 0x108, WriteRegNum = 0
+
+----------------------------------- CLOCK CYCLE : 6 -----------------------------------
+----------------------------------- CLOCK CYCLE : 6 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x103;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x81180000, [lb  $24, 0($8)], IncrPC=6
+-> IF/ID Read
+Inst=0x01224820, [add $9, $9, $2], IncrPC=6
+
+-> ID/EX Write
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x109, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,9
+
+-> ID/EX Read
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x109, ReadRegValue2 = 0x106, SEOffset = 0x00000000, WriteRegNum = 6,7
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ALUResult = 0x20F, SBValue= 0x106, WriteRegNum = 7
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1,
+ALUResult = 0x207, SBValue= 0x103, WriteRegNum = 3
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x207, WriteRegNum = 3
+
+-> MEM/WB Read
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x104, WriteRegNum = 10
+
+----------------------------------- CLOCK CYCLE : 7 -----------------------------------
+----------------------------------- CLOCK CYCLE : 7 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x107;Reg08=0x108;Reg09=0x109;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x81510010, [lb  $17, 16($10)], IncrPC=7
+-> IF/ID Read
+Inst=0x81180000, [lb  $24, 0($8)], IncrPC=7
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x118, SEOffset = 0x00000000, WriteRegNum = 24,8
+
+-> ID/EX Read
+Control: RegDst=1, ALUSrc=0, ALUOp=1, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x109, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,9
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ALUResult = 0x20B, SBValue= 0x102, WriteRegNum = 9
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1,
+ALUResult = 0x20F, SBValue= 0x106, WriteRegNum = 7
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x20F, WriteRegNum = 7
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x207, WriteRegNum = 3
+
+----------------------------------- CLOCK CYCLE : 8 -----------------------------------
+----------------------------------- CLOCK CYCLE : 8 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x20F;Reg08=0x108;Reg09=0x109;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00624022, [sub $8, $3, $2], IncrPC=8
+-> IF/ID Read
+Inst=0x81510010, [lb  $17, 16($10)], IncrPC=8
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x004, ReadRegValue2 = 0x111, SEOffset = 0x00000010, WriteRegNum = 17,10
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x108, ReadRegValue2 = 0x118, SEOffset = 0x00000000, WriteRegNum = 24,8
+
+-> EX/MEM Write
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ALUResult = 0x108, SBValue= 0x118, WriteRegNum = 24
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1,
+ALUResult = 0x20B, SBValue= 0x102, WriteRegNum = 9
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x20B, WriteRegNum = 9
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x20F, WriteRegNum = 7
+
+----------------------------------- CLOCK CYCLE : 9 -----------------------------------
+----------------------------------- CLOCK CYCLE : 9 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x20F;Reg08=0x108;Reg09=0x20B;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x118;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00000000, [], IncrPC=9
+-> IF/ID Read
+Inst=0x00624022, [sub $8, $3, $2], IncrPC=9
+
+-> ID/EX Write
+Control: RegDst=1, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x207, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,8
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=1, ALUOp=1, MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ReadRegValue1 = 0x004, ReadRegValue2 = 0x111, SEOffset = 0x00000010, WriteRegNum = 17,10
+
+-> EX/MEM Write
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1
+ALUResult = 0x014, SBValue= 0x111, WriteRegNum = 17
+
+-> EX/MEM Read
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1,
+ALUResult = 0x108, SBValue= 0x118, WriteRegNum = 24
+
+-> MEM/WB Write
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x102, ALUResult = 0x108, WriteRegNum = 24
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x004, ALUResult = 0x20B, WriteRegNum = 9
+
+----------------------------------- CLOCK CYCLE : 10 -----------------------------------
+----------------------------------- CLOCK CYCLE : 10 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x20F;Reg08=0x108;Reg09=0x20B;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x111;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x102;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00000000, [], IncrPC=10
+-> IF/ID Read
+Inst=0x00000000, [], IncrPC=10
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> ID/EX Read
+Control: RegDst=1, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ReadRegValue1 = 0x207, ReadRegValue2 = 0x102, SEOffset = 0x00000000, WriteRegNum = 2,8
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1
+ALUResult = 0x105, SBValue= 0x102, WriteRegNum = 8
+
+-> EX/MEM Read
+Control: MemRead=1, MemWrite=0, MemToReg=1, RegWrite=1,
+ALUResult = 0x014, SBValue= 0x111, WriteRegNum = 17
+
+-> MEM/WB Write
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x014, ALUResult = 0x014, WriteRegNum = 17
+
+-> MEM/WB Read
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x102, ALUResult = 0x108, WriteRegNum = 24
+
+----------------------------------- CLOCK CYCLE : 11 -----------------------------------
+----------------------------------- CLOCK CYCLE : 11 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x20F;Reg08=0x108;Reg09=0x20B;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x014;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x102;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00000000, [], IncrPC=11
+-> IF/ID Read
+Inst=0x00000000, [], IncrPC=11
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=1,
+ALUResult = 0x105, SBValue= 0x102, WriteRegNum = 8
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x014, ALUResult = 0x105, WriteRegNum = 8
+
+-> MEM/WB Read
+Control: MemToReg=1, RegWrite=1
+LWDataValue=0x014, ALUResult = 0x014, WriteRegNum = 17
+
+----------------------------------- CLOCK CYCLE : 12 -----------------------------------
+----------------------------------- CLOCK CYCLE : 12 -----------------------------------
+
+************************************* Registers: **************************************
+Reg00=0x000;Reg01=0x101;Reg02=0x102;Reg03=0x207;Reg04=0x104;Reg05=0x105;Reg06=0x106;
+Reg07=0x20F;Reg08=0x105;Reg09=0x20B;Reg10=0x004;Reg11=0x10B;Reg12=0x10C;Reg13=0x10D;
+Reg14=0x10E;Reg15=0x10F;Reg16=0x110;Reg17=0x014;Reg18=0x112;Reg19=0x113;Reg20=0x114;
+Reg21=0x115;Reg22=0x116;Reg23=0x117;Reg24=0x102;Reg25=0x119;Reg26=0x11A;Reg27=0x11B;
+Reg28=0x11C;Reg29=0x11D;Reg30=0x11E;Reg31=0x11F;
+
+********************************* Pipeline Registers: *********************************
+-> IF/ID Write
+Inst=0x00000000, [], IncrPC=12
+-> IF/ID Read
+Inst=0x00000000, [], IncrPC=12
+
+-> ID/EX Write
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> ID/EX Read
+Control: RegDst=0, ALUSrc=0, ALUOp=0, MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ReadRegValue1 = 0x000, ReadRegValue2 = 0x000, SEOffset = 0x00000000, WriteRegNum = 0,0
+
+-> EX/MEM Write
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> EX/MEM Read
+Control: MemRead=-1, MemWrite=0, MemToReg=0, RegWrite=0,
+ALUResult = 0x000, SBValue= 0x000, WriteRegNum = 0
+
+-> MEM/WB Write
+Control: MemToReg=0, RegWrite=0
+LWDataValue=0x014, ALUResult = 0x000, WriteRegNum = 0
+
+-> MEM/WB Read
+Control: MemToReg=0, RegWrite=1
+LWDataValue=0x014, ALUResult = 0x105, WriteRegNum = 8
+
